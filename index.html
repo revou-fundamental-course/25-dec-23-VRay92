@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="./assets/logo.png" alt="logo">
+            <ul>
+                <li><a href="#link-nav1">Luas Segitiga</a></li>
+                <li><a href="#link-nav2">Keliling Segitiga</a></li>
+            </ul>
+        </nav>
+        <article class="Introduction">
+            <h3>Welcome to Katik</h3>
+            <p>Hai Sobat, Selamat datang di Katik!</p>
+            <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling segitiga.</p>
+        </article>
+    </header>
+    <hr>
+
+    <!-- LUAS SEGITIGA -->
+
+    <div id="link-nav1"></div>
+
+    <h4>Luas Segitiga </h4>
+
+    <section id="luasSegitiga" class="container">
+
+        <div id="gambar">
+            <img id="segitiga" src="assets/gambar segitiga.png" alt="segitiga1">
+        </div>
+        
+        <div id="description1">
+            <h3>Rumus Luas Segitiga yaitu:</h3>
+        </div>
+        
+        <div id="description2">
+            <p style="font-style: italic; font-size: 20px; text-align: center;">L = 1/2 x a x t</p>
+        </div>
+        
+        <div id="description3">
+            <h3>Dimana:</h3>
+            <p style="font-style: italic;align-self: first baseline;">L= luas, a = panjang alas, t = tinggi</p>
+        </div>
+
+    </section>
+
+    <!-- INPUT LUAS SEGITIGA -->
+
+    <article class="input-area-section">
+        
+        <h3>Hitung Luas Segitiga</h3>
+
+        <form>
+
+            <div class="alas">
+                <label for="input-alas" id="label-alas">Alas</label>
+                <input type="number" id="input-alas" placeholder="Masukkan Nilai Alas">
+            </div>
+
+            <div class="tinggi">
+                <label for="input-tinggi" id="label-tinggi">Tinggi</label>
+                <input type="number" id="input-tinggi" placeholder="Masukkan Nilai Tinggi">
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="button1" onclick="perhitunganLuas()">Hitung</button>
+                <button type="reset" id="button2" onclick="resetForm1()">Reset</button>
+            </div>
+
+            <p id="Hasil1">
+            </p>
+    
+        </form>
+
+    </article>
+    <hr>
+
+    <!--KELILING SEGITIGA -->
+
+    <div id="link-nav2"></div>
+
+    <h4>Keliling Segitiga</h4>
+
+    <section id="kelilingSegitiga" class="container2">
+
+        <div id="gambar2">
+            <img id="segitiga2" src="assets/gambar segitiga2.png" alt="segitiga2">
+        </div>
+        
+        <div id="description4">
+            <h3>Rumus Keliling Segitiga yaitu:</h3>
+        </div>
+        
+        <div id="description5">
+            <p style="font-style: italic; font-size: 20px; text-align: center;">K = s1 + s2 + s3</p>
+        </div>
+        
+        <div id="description6">
+            <h3>Dimana:</h3>
+            <p style="font-style: italic;align-self: first baseline;">K= Keliling, s1 = sisi A, s2 = sisi B, <br>s3 = sisi C</p>
+        </div>
+
+    </section>
+
+    <!-- INPUT KELILING SEGITIGA -->
+
+    <article class="input-area-section">
+
+        <h3>Hitung Keliling Segitiga</h3>
+
+        <div class="sisiA">
+            <label for="input-sisiA" id="label-sisiA">Sisi A</label>
+            <input type="number" id="input-sisiA" placeholder="Masukkan Nilai Sisi A">
+        </div>
+
+        <div class="sisiB">
+            <label for="input-sisiB" id="label-sisiB">Sisi B</label>
+            <input type="number" id="input-sisiB" placeholder="Masukkan Nilai Sisi B">
+        </div>
+
+        <div class="sisiC">
+            <label for="input-sisiC" id="label-sisiC">Sisi C</label>
+            <input type="number" id="input-sisiC" placeholder="Masukkan Nilai Sisi C">
+        </div>
+
+        <div class="buttons">
+            <button type="button" id="button3" onclick="perhitunganKeliling()">Hitung</button>
+            <button type="reset" id="button4" onclick="resetForm2()">Reset</button>
+        </div>
+
+        <p id="Hasil2">
+        </p>
+
+    </article>
+
+    <script src="js/script.js"></script>
+
+    <footer>©2024. Created By: Adrian Irawan</footer>
+</body>
+</html>

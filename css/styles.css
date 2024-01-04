@@ -1,0 +1,312 @@
+body{
+    background-image: url("../assets/13798994.jpg");
+    background-size: 20% 15%;
+}
+
+/* navigation bar */
+nav{
+    display: flex;
+    justify-content:space-between;
+    background-color:#282454;
+    border-radius:10px;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+#Profile-name{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;  
+}
+
+li{
+    text-decoration: none;
+    padding: 20px;
+    list-style:none;
+    display:inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#logo{
+    height: 60px;
+    margin-left:40px;
+
+}
+
+hr{
+    color:gray;
+    line-height:1px;
+    opacity: 30%;
+}
+
+h4{
+    display: flex;
+    color: white;
+    background-color: #008170;
+    width:500px;
+    height:60px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:auto;
+    align-items: center;
+    margin-top:50px;
+    border-radius:10px;
+}
+
+/* Header tulisan */
+
+.Introduction{
+    margin-left:70px;
+    margin-top:100px;
+    margin-bottom:240px;
+}
+
+.Introduction>h3{
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Introduction>p{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* grid */
+.container {
+    display:grid;
+    border: 2px #008170 solid;
+    width:500px;
+    height:250px;
+    grid-template-columns:200px 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    color:white;
+    margin:30px auto;
+    border-radius:10px;
+    background-color: #1d1c2d;
+}
+
+#gambar{
+    display:grid;
+    grid-row: 1 / span 3;
+    grid-column: 1 / 2;
+    align-items:center;
+}
+
+#segitiga{
+    width:200px;
+}
+
+#description1 {
+    display:grid;
+    padding-top: 10px; 
+    grid-row:1;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:auto;
+}
+
+#description2 {
+    display:grid;
+    grid-row-start:2;
+    grid-row-end:3;
+    margin:auto;
+}
+
+#description3 {
+    display:grid;
+    grid-row:3 /4;
+    grid-column: 2/3;
+    margin-left:30px;
+    margin-bottom:20px;
+}
+
+#description3 > h3 {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+section{
+    display:flex;
+}
+
+/* input area */
+.input-area-section{
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+.alas, .tinggi,.input-area-section > h3{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#input-alas,#input-tinggi{
+    width:400px;
+    padding:5px;
+    text-align: left;
+    border-radius:5px;
+    outline:none;
+}
+
+input:focus{
+    border: 5px #008170 solid;
+}
+
+#label-alas {
+    margin-right: 32px;
+}
+
+#label-tinggi {
+    margin-right: 20px;
+}
+
+
+.buttons{
+    display:flex;
+    align-self: center;
+    gap:20px;
+    
+}
+
+button{
+    height: 30px;
+    color:white;
+    font-weight: bold;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+}
+
+#button1,#button3{
+    width: 370px;
+    background-color:#ff7800;
+}
+
+#button2,#button4{
+    width:90px;
+    background-color:red;
+}
+
+#button1:hover,#button3:hover{
+    background-color: #a95104;
+}
+
+#button2:hover,#button4:hover{
+    background-color: rgb(154, 0, 0);
+}
+
+#button1:active,#button3:active{
+    background-color: #673203;
+    transform:translateY(3px)
+}
+
+#button2:active,#button4:active{
+    background-color: rgb(104, 2, 2);
+    transform:translateY(3px)
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+#Hasil1,#Hasil2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+/* KELILING SEGITIGA */
+
+  .container2 {
+    display:grid;
+    border: 2px #008170 solid;
+    width:500px;
+    height:250px;
+    grid-template-columns:200px 1fr;
+    grid-template-rows:1fr 50px 1fr;
+    color:white;
+    margin:30px auto;
+    border-radius:10px;
+    background-color: #1d1c2d
+}
+
+#gambar2{
+    display:grid;
+    grid-row: 1 / span 3;
+    grid-column: 1 / 2;
+    align-items:center;
+}
+
+#segitiga2{
+    width:200px;
+}
+
+#description4 {
+    display:grid;
+    padding-top: 10px; 
+    grid-row:1;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:auto;
+}
+
+#description5 {
+    display:grid;
+    grid-row-start:2;
+    grid-row-end:3;
+    margin:auto;
+}
+
+#description6 {
+    display:grid;
+    grid-row:3 /4;
+    grid-column: 2/3;
+    margin-left:17px;
+    margin-bottom:20px;
+}
+
+#description6 > h3 {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+/* input area 2 */
+.input-area-section{
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+.buttons, .sisiA, .sisiB, .sisiC, .input-area-section > h3{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#input-sisiA, #input-sisiB, #input-sisiC{
+    width:400px;
+    padding:5px;
+    text-align: left;
+    border-radius:5px;
+    outline:none;
+}
+
+
+#label-sisiA,#label-sisiB,#label-sisiC {
+    margin-right: 20px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+/* footer */
+
+footer{
+    padding-top:50px;
+    color:white;
+    text-align: end;
+    font-family: Arial, Helvetica, sans-serif;
+}
